@@ -276,6 +276,18 @@ table tbody tr td:hover {
 }
 
 @media (max-width: 1024px) {
+  .navbar-brand-centered {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .navbar-nav {
+    flex-direction: row;
+  }
+  .navbar .container-fluid {
+    display: flex;
+    justify-content: space-between;
+  }
   .navbar-expand-lg .navbar-nav {
     text-align: center;
   }
@@ -283,8 +295,8 @@ table tbody tr td:hover {
     justify-content: center;
   }
   .navbar-collapse {
-    flex-basis: 100%;
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
   }
   .robot-img {
     padding-left: 120px;
@@ -313,6 +325,15 @@ table tbody tr td:hover {
   }
 }
 @media (min-width: 1025px) {
+  .navbar-expand-lg .navbar-nav {
+    text-align: center;
+  }
+  .d-flex {
+    justify-content: center;
+  }
+  .mx-auto {
+    margin-left: auto;
+  }
   #ocultar {
     display: none;
   }
